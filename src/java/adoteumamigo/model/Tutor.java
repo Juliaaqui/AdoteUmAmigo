@@ -10,6 +10,11 @@ package adoteumamigo.model;
  */
 public class Tutor {
     private int id;
+    private String nome;
+    private String telefone;
+    private String email;
+    private String cpf;
+    private String estado;
 
     public int getId() {
         return id;
@@ -58,9 +63,4 @@ public class Tutor {
     public void setEstado(String estado) {
         this.estado = estado;
     }
-    private String nome;
-    private String telefone;
-    private String email;
-    private String cpf;
-    private String estado;
 }

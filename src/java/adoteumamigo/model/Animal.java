@@ -10,7 +10,15 @@ package adoteumamigo.model;
  */
 public class Animal {
     private int id;
+    private String nome;
     private String sexo;
+    private int idade;
+    private String raca;
+    private double peso;
+    private String especie;
+    private String descricao;
+    private String status;
+    private Tutor tutor; 
 
     public int getId() {
         return id;
@@ -18,6 +26,14 @@ public class Animal {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public String getSexo() {
@@ -67,9 +83,20 @@ public class Animal {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    private int idade;
-    private String raca;
-    private double peso;
-    private String especie;
-    private String descricao;
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public Tutor getTutor() {
+        return tutor;
+    }
+
+    public void setTutor(Tutor tutor) {
+        this.tutor = tutor;
+    }
 }
