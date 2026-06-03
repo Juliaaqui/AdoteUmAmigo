@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 
 public class Conexao {
-
+//macaco
     private static final String URL = "jdbc:mysql://localhost:3306/adote_um_amigo";
     private static final String USUARIO = "root";
     private static final String SENHA = "#admin301606";
