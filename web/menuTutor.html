@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Tutor - Adote um Amigo</title>
+    <link rel="stylesheet" href="css/catalog.css">
+    <link rel="stylesheet" href="css/painel.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img src="imagens/LogoAdoteUmAmigo.png" alt="Logo" class="headerLogo">
+            Adote um Amigo — Painel do Tutor
+        </h1>
+        <nav>
+            <a href="index.html">Sair / Home</a>
+        </nav>
+    </header>
+
+    <main class="painel-container">
+        
+        <section class="painel-acoes">
+            <h2>Bem-vindo, Tutor!</h2>
+            <a href="cadastrar_animal.html" class="btn-adicionar">
+                ➕ Adicionar Novo Animal
+            </a>
+        </section>
+
+        <section class="painel-lista">
+            <h3>Seus Animais na Plataforma</h3>
+            
+            <div class="tabela-responsiva">
+                <table class="tabela-animais">
+                    <thead>
+                        <tr>
+                            <th>Foto</th>
+                            <th>Nome</th>
+                            <th>Espécie/Raça</th>
+                            <th>Idade</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="imagens/labradorCachorroBuddy.jpg" alt="Buddy" class="tabela-thumb"></td>
+                            <td><strong>Buddy</strong></td>
+                            <td>Cão / Labrador</td>
+                            <td>2 anos</td>
+                            <td><span class="status-badge disponivel">Disponível</span></td>
+                            <td>
+                                <button class="btn-acao btn-editar">Editar</button>
+                                <button class="btn-acao btn-excluir">Excluir</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="imagens/ViralataGataLuna.jpg" alt="Luna" class="tabela-thumb"></td>
+                            <td><strong>Luna</strong></td>
+                            <td>Gato / Vira-lata</td>
+                            <td>6 meses</td>
+                            <td><span class="status-badge disponivel">Disponível</span></td>
+                            <td>
+                                <button class="btn-acao btn-editar">Editar</button>
+                                <button class="btn-acao btn-excluir">Excluir</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </section>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessar Conta - Adote um Amigo</title>
+    <!-- Vinculando o seu arquivo de estilização -->
+    <link rel="stylesheet" href="css/loginRegistrar.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img src="imagens/LogoAdoteUmAmigo.png" alt="Logo" class="headerLogo">
+            Adote um Amigo
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login / Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            
+            <section class="auth-card">
+                <h2>Já sou Tutor</h2> 
+                <form action="LoginServlet" method="POST">
+                    <div class="form-group">
+                        <label for="login-email">E-mail:</label>
+                        <input type="email" id="login-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-senha">Senha:</label>
+                        <input type="password" id="login-senha" name="password" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-auth btn-login">Entrar</button>
+                    <a href="menuTutor.html">Login / Register</a>   
+                </form>
+            </section>
+
+
+            <section class="auth-card">
+                <h2>Quero me Cadastrar</h2>
+                <form action="CadastroServlet" method="POST">
+                    <div class="form-group">
+                        <label for="cad-nome">Nome Completo:</label>
+                        <input type="text" id="cad-nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cad-email">E-mail:</label>
+                        <input type="email" id="cad-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cad-senha">Senha:</label>
+                        <input type="password" id="cad-senha" name="password" required>
+                    </div>
+                    <button type="submit" class="btn-auth btn-register">Criar Conta</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>

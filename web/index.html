@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um amigo</title>
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+
+    <header>
+        <h1>
+            <img src="imagens/LogoAdoteUmAmigo.png" alt="Logo" class="headerLogo">
+            Adote um Amigo
+        </h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="loginRegistrar.html">Login / Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Animais disponiveis:</h2>
+        
+        <div class="catalog-grid">
+            
+            <div class="animal-card" onclick="viewAnimalDetails(1)">
+                <img src="imagens/labradorCachorroBuddy.jpg" alt="labradorCachorroBuddy">
+                <div class="animal-info">
+                    <h3>Buddy</h3>
+                    <p>Labrador • 2 anos</p>
+                    <button class="btn-details">Ver detalhes</button>
+                </div>
+            </div>
+
+            <div class="animal-card" onclick="viewAnimalDetails(2)">
+                <img src="imagens/ViralataGataLuna.jpg" alt="ViralataGataLuna">
+                <div class="animal-info">
+                    <h3>Luna</h3>
+                    <p>Viralata • 6 meses</p>
+                    <button class="btn-details">Ver detalhes</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="js/catalog.js"></script>
+</body>
+</html>
